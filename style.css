@@ -1,0 +1,173 @@
+/* 전체 스타일 초기화 */
+* {
+    margin: 0;
+    /*바깥쪽 여백 초기화*/
+    padding: 0;
+    /*안쪽 여백 초기화*/
+    box-sizing: border-box;
+    /*테두리 두께 무시하기*/
+    list-style-type: none;
+    /*li태그 사용시 기호 제거*/
+
+    border: 1px solid black;
+    /*전체 영역에 테두리 생성 -> 가이드라인 만들기 위해*/
+}
+
+.container {
+    width: 1200px;
+    height: 700px;
+
+    margin: 0 auto;
+
+}
+
+.header {
+    width: 1200px;
+    height: 100px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo1 {
+    width: 200px;
+    height: 80px;
+
+}
+
+.logo1 img {
+    width: 200px;
+    height: 80px;
+
+}
+
+.menu {
+    width: 600px;
+    height: 100px;
+
+    display: flex;
+    /*자식 요소들(li태그들 이겠지?) 가로 배치*/
+    justify-content: space-between;
+    /*가로방향으로 균등하게 배분*/
+    align-items: center;
+    /*세로방향으로 가운데 정렬*/
+
+}
+
+.menu li {
+    width: 150px;
+    height: 25px;
+    text-align: center;
+    /*글자 가운데 정렬*/
+
+    transition: 0.5s;
+}
+
+.menu li:hover {
+    background-color: salmon;
+    color: white;
+
+
+}
+
+
+
+
+.slide {
+    width: 1200px;
+    height: 300px;
+
+    overflow: hidden;
+
+}
+
+.slide li {
+    width: 1200px;
+    height: 300px;
+    animation: slide 6s infinite;
+}
+
+@keyframes slide {
+    0% {
+        transform: translateY(-0px);
+    }
+
+    33% {
+        transform: translateY(-300px);
+    }
+
+    66% {
+        transform: translateY(-600px);
+    }
+
+    100% {
+        transform: translateY(0px);
+    }
+}
+
+.contents {
+    width: 1200px;
+    height: 200px;
+
+    display: flex;
+}
+
+.notice {
+    width: 400px;
+    height: 200px;
+}
+
+.banner {
+    width: 400px;
+    height: 200px;
+}
+
+.shortcut {
+    width: 400px;
+    height: 200px;
+}
+
+.contents button {
+    width: 120px;
+    height: 25px;
+    background-color: crimson;
+    color: white;
+    text-align: center;
+}
+
+.box1 {
+    width: 400px;
+    height: 175px;
+}
+
+.box1 li {
+    margin-top: 8px;
+
+}
+
+.box1 li:hover {
+    background-color: gray;
+    color: white;
+}
+
+.box2 {
+    width: 400px;
+    height: 175px;
+}
+
+.box3 {
+    width: 400px;
+    height: 175px;
+}
+
+
+.shortcut {
+    width: 400px;
+    height: 200px;
+}
+
+.footer {
+    width: 1200px;
+    height: 100px;
+}
