@@ -9,8 +9,7 @@
     list-style-type: none;
     /*li태그 사용시 기호 제거*/
 
-    border: 1px solid black;
-    /*전체 영역에 테두리 생성 -> 가이드라인 만들기 위해*/
+
 }
 
 .container {
@@ -62,6 +61,8 @@
     /*글자 가운데 정렬*/
 
     transition: 0.5s;
+    border: 1px solid #ccc;
+
 }
 
 .menu li:hover {
@@ -123,6 +124,11 @@
     height: 200px;
 }
 
+.banner img {
+    width: 400px;
+    height: 175px;
+}
+
 .shortcut {
     width: 400px;
     height: 200px;
@@ -139,6 +145,7 @@
 .box1 {
     width: 400px;
     height: 175px;
+    border: 1px solid #ccc;
 }
 
 .box1 li {
@@ -159,6 +166,15 @@
 .box3 {
     width: 400px;
     height: 175px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border: 1px solid #ccc;
+}
+
+.box3 img {
+    width: 100px;
+    height: 100px;
 }
 
 
@@ -170,4 +186,42 @@
 .footer {
     width: 1200px;
     height: 100px;
+
+    display: flex;
+    align-items: center;
+    background-color: #ccc;
+}
+
+.logo2 {
+    width: 200px;
+    height: 80px;
+}
+
+.logo2 img {
+    width: 200px;
+    height: 80px;
+}
+
+.copy {
+    width: 800px;
+    height: 100px;
+
+    text-align: center;
+    padding-top: 30px;
+
+}
+
+.sns {
+    width: 200px;
+    height: 100px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+
+}
+
+.sns img {
+    width: 50px;
+    height: 50px;
 }
